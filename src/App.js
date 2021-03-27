@@ -14,6 +14,12 @@ function App() {
     {title: 'Semangka', count: 1}
   ])
 
+  const handleAdditionCount = index => {
+    const newTodos = [...todos]
+    newTodos[index].count = newTodos[index].count + 1
+    setTodos(newTodos)
+  }
+
   return (
     <>
       <nav className="nav">
@@ -47,7 +53,7 @@ function App() {
                     <img src={minusIcon} alt="minus icon"/>
                     </button>
 
-                    <button className="todo-action-button">
+                    <button onClick={() => handleAdditionCount(index)} className="todo-action-button">
                       <img src={plusIcon} alt="minus icon"/>
                     </button>
                   </div>

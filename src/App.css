@@ -26,7 +26,7 @@
     max-width: 400px;
     padding: 16px;
     margin: 0 auto;
-    background-color: var(--main-container-color);
+    /* background-color: var(--main-container-color); */
 }
 
 .form {
